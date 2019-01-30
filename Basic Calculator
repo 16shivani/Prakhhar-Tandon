@@ -1,0 +1,45 @@
+# include <iostream.h>
+# include <conio.h>
+void main()
+{
+clrscr();
+int a,b,choice,ans;
+cout<<"Enter 1st integer -->"<<"\n";
+cin>>a;
+cout<<"Enter 2nd integer -->"<<"\n";
+cin>>b;
+cout<<"Press 1 for Addition \n"<<"Press 2 for Subtraction \n"<<"Press 3rd for Product \n"<<"Press 4 for Quotient \n"<<"Press 5 for Remainder \n";
+cin>>choice;
+switch(choice)
+{
+case 1:
+ans=a+b;
+cout<<"Sum ="<<ans;
+break;
+case 2:
+if(a<b)
+{
+ans=a-b;
+}
+else
+{
+ans=b-a;
+}
+cout<<"Difference ="<<ans;
+break ;
+case 3:
+ans=a*b;
+cout<<"Product ="<<ans;
+break ;
+case 4:
+ans=a/b;
+cout<<"Quotient ="<<ans;
+break ;
+case 5:
+ans=a%b;
+cout<<"Remainder ="<<ans;
+break();
+}
+default ();
+getch();
+}
