@@ -1,0 +1,22 @@
+# include <iostream.h>
+# include <conio.h>
+# include <fstream.h>
+void main()
+{
+clrscr();
+char str;
+fstream ch;
+ch.open("");
+if(!ch)
+{
+cout<<"The File Does not exist";
+}
+else
+{
+while(!ch.eof())
+{
+puts(ch);
+}
+}
+getch();
+}
