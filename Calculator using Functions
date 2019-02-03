@@ -1,0 +1,55 @@
+# include <iostream.h>
+# include <conio.h>
+void sum(int,int)
+{
+int sum,a,b;
+sum=a+b;
+cout<<"Sum ="<<sum;
+};
+void subtract(int,int)
+{
+int diff,a,b;
+if(a>b)
+{
+diff=a-b;
+}
+else 
+{
+diff=b-a;
+}
+cout<<"Difference ="<<diff;
+}
+};
+void product(int,int)
+{
+int product,a,b;
+product=a*b;
+cout<<"Product of the two integers is :"<<product;
+};
+void quotient(int,int)
+{
+int quotient,a,b;
+quotient=a/b;
+cout<<"Quotient of the two integers ois ="<<quotient;
+};
+void remainder(int,int)
+{
+int remainder,a,b;
+remainder=a%b;
+cout<<"Remainder of the two integers is :"<<remainder;
+};
+void main()
+{
+clrscr();
+int p,q;
+cout<<"Enter 1st integer -->";
+cin>>p;
+cout<<"Enter 2nd integer -->";
+cin>>q;
+sum(p,q);
+subtract(p,q);
+product(p,q);
+quotient(p,q);
+remainder(p,q);
+getch();
+}
