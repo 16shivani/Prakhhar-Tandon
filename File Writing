@@ -1,0 +1,22 @@
+# include <iostream.h>
+# include <conio.h>
+# include <fstream.h>
+void main()
+{
+clrscr();
+char text[100];
+ofstream fout;
+fstream file;
+file.open("c:\file.txt",ios::in|ios::out);
+if(!file)
+{
+cout<<"File Does not Exist";
+}
+else 
+{
+cout<<"Enter the text to be written -->";
+gets(text,100);
+fout(text,100);
+}
+getch();
+}
