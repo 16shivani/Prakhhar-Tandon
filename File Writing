@@ -18,5 +18,6 @@ cout<<"Enter the text to be written -->";
 gets(text,100);
 fout(text,100);
 }
+file.close();
 getch();
 }
