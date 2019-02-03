@@ -4,9 +4,8 @@
 void main()
 {
 clrscr();
-char str;
 fstream ch;
-ch.open("");
+ch.open("c:\file.txt",ios::in|ios::out);
 if(!ch)
 {
 cout<<"The File Does not exist";
@@ -15,7 +14,7 @@ else
 {
 while(!ch.eof())
 {
-puts(ch);
+fout(ch);
 }
 }
 getch();
