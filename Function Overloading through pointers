@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class me
+{
+    int a,b;
+    public:
+    me()
+    {
+        cin>>a>>b;
+    }
+    me(const me&c)
+    {
+        a=c.a*10;
+        b=c.b*10;
+    }
+    void show()
+    {
+        cout<<a<<b;
+    }
+};
+int main()
+{
+    me a1;
+    me a2(a1));
+    a2.show();
+}
