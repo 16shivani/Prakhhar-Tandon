@@ -1,0 +1,24 @@
+# include <iostream>
+# include <cmath>
+using namespace std;
+void calroot(int i,int j,int k)
+{
+    int a,b,c,d,e,f,g;
+    d=(b*b)-(4*a*c);
+    e=sqrt(d);
+    f=(-b+e)/(2*a);
+    g=(-b-e)/(2*a);
+    cout<<"The Zeroes of the Quadratic are ="<<f<<"Or"<<g;
+}
+int main()
+{
+    int a,b,c;
+    cout<<"Enter the Co-efficient of X to the power 2 -->";
+    cin>>a;
+    cout<<"Enter the Co-efficient of X -->";
+    cin>>b;
+    cout<<"Enter the constant -->";
+    cin>>c;
+    calroot(a,b,c);
+    return 0;
+}
